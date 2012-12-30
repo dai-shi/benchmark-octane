@@ -1,0 +1,18 @@
+{
+  "name": "benchmark-octane",
+  "description": "Octane benchmark for Node.js",
+  "version": "0.9.0",
+  "author": "the V8 project authors and Daishi Kato",
+  "dependencies": {
+    "benchmark": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dai-shi/benchmark-octane.git"
+  },
+  "keywords": [
+    "benchmark",
+    "octane",
+    "v8"
+  ]
+}
