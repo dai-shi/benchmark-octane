@@ -27,16 +27,13 @@ var octane = require('./lib/octane.js');
 
 var suite = new benchmark.Suite();
 
-for (var test in octane) {
-  suite.push(new benchmark(octane[test]));
+for (var i = 0; i < octane.length; i++) {
+  suite.push(new benchmark(octane[i]));
 }
 
 suite.on('cycle', function(event) {
   console.log(String(event.target));
 })
-  .on('complete', function() {
-  console.log('Fastest is ' + this.filter('fastest').pluck('name'));
-})
   .run({
-  async: true
+  async: false
 });
