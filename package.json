@@ -4,7 +4,6 @@
   "version": "0.9.0",
   "author": "the V8 project authors and Daishi Kato",
   "dependencies": {
-    "benchmark": "*"
   },
   "repository": {
     "type": "git",
