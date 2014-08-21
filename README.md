@@ -3,34 +3,85 @@ benchmark-octane
 
 Octane benchmark for Node.js
 
-* This exports [Octane](http://code.google.com/p/octane-benchmark/) benchmark suites for [benchmark.js](http://benchmarkjs.com/).
+* This provides [Octane 2.0](http://code.google.com/p/octane-benchmark/) benchmark to nodeJS.
 
 How to use
 ----------
 
-### GitHub
+##### using github
 
-    % git clone https://github.com/dai-shi/benchmark-octane.git
+
+    % git clone https://github.com/erossignon/benchmark-octane.git
     % cd benchmark-octane
     % node run.js
-    Richards.Richards x 288 ops/sec ±10.28% (45 runs sampled)
-    DeltaBlue.DeltaBlue x 186 ops/sec ±9.87% (49 runs sampled)
-    Crypto.Encrypt x 155 ops/sec ±9.77% (48 runs sampled)
-    Crypto.Decrypt x 7.99 ops/sec ±14.10% (26 runs sampled)
-    RayTrace.RayTrace x 17.06 ops/sec ±12.14% (33 runs sampled)
-    EarleyBoyer.Earley x 254 ops/sec ±9.94% (50 runs sampled)
-    EarleyBoyer.Boyer x 17.87 ops/sec ±12.56% (33 runs sampled)
-    RegExp.RegExp x 6.44 ops/sec ±16.00% (21 runs sampled)
-    Splay.Splay x 117 ops/sec ±16.07% (41 runs sampled)
-    NavierStokes.NavierStokes x 3.45 ops/sec ±24.94% (12 runs sampled)
-    PdfJS.PdfJS x 2.62 ops/sec ±26.21% (11 runs sampled)
-    Mandreel.Mandreel x 0.32 ops/sec ±19.59% (5 runs sampled)
-    Gameboy.Gameboy x 0.98 ops/sec ±30.37% (7 runs sampled)
-    CodeLoad.CodeLoadClosure x 337 ops/sec ±13.18% (43 runs sampled)
-    CodeLoad.CodeLoadJQuery x 8.49 ops/sec ±18.60% (21 runs sampled)
-    Box2D.Box2D x 2.32 ops/sec ±25.41% (10 runs sampled)
 
-### NPM
+##### using npm
 
-    % npm install benchmark-octane
+    % npm install benchmark-octane -g
+    % benchmark-octane
+   
+This wil produce a output like this:
 
+    D:\projet\benchmark-octane>node run.js
+        hostname     : XXXXXXXXX
+        node version : v0.10.28
+          V8 version : 3.14.5.9
+     platform & arch : win32 x64
+
+     config : { target_defaults:
+       { cflags: [],
+         default_configuration: 'Release',
+         defines: [],
+         include_dirs: [],
+         libraries: [] },
+      variables:
+       { clang: 0,
+         host_arch: 'ia32',
+         node_install_npm: true,
+         node_prefix: '',
+         node_shared_cares: false,
+         node_shared_http_parser: false,
+         node_shared_libuv: false,
+         node_shared_openssl: false,
+         node_shared_v8: false,
+         node_shared_zlib: false,
+         node_tag: '',
+         node_unsafe_optimizations: 0,
+         node_use_dtrace: false,
+         node_use_etw: true,
+         node_use_openssl: true,
+         node_use_perfctr: true,
+         node_use_systemtap: false,
+         target_arch: 'x64',
+         v8_enable_gdbjit: 0,
+         v8_no_strict_aliasing: 1,
+         v8_use_snapshot: true,
+         visibility: '' } }
+
+    Richards            : 15822
+    DeltaBlue           : 19842
+    Crypto              : 20628
+    RayTrace            : 18592
+    EarleyBoyer         : 33527
+    RegExp              : 4141
+    Splay               : 5756
+    SplayLatency        : 13120
+    NavierStokes        : 23299
+    PdfJS               : 14409
+    Mandreel            : 16551
+    MandreelLatency     : 20600
+    Gameboy             : 23542
+    CodeLoad            : 16937
+    Box2D               : 13821
+    zlib                : 20537
+    Typescript          : 22330
+    ----
+    Score (version 9): 16202
+     duration  40  seconds
+     
+##### Authors
+
+   * the V8 project authors
+   * Daishi Kato
+   * Etienne Rossignon
+  
