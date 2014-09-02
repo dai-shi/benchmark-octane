@@ -10,19 +10,17 @@ How to use
 
 ##### using github
 
-
-    % git clone https://github.com/erossignon/benchmark-octane.git
-    % cd benchmark-octane
-    % node run.js
+    $ git clone https://github.com/dai-shi/benchmark-octane.git
+    $ cd benchmark-octane
+    $ node run.js
 
 ##### using npm
 
-    % npm install benchmark-octane -g
-    % benchmark-octane
+    $ npm install benchmark-octane -g
+    $ benchmark-octane
    
 This wil produce a output like this:
 
-    D:\projet\benchmark-octane>node run.js
         hostname     : XXXXXXXXX
         node version : v0.10.28
           V8 version : 3.14.5.9
@@ -84,4 +82,4 @@ This wil produce a output like this:
    * the V8 project authors
    * Daishi Kato
    * Etienne Rossignon
-  
+
