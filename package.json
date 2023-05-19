@@ -1,13 +1,12 @@
 {
   "name": "benchmark-octane",
   "description": "Octane benchmark for Node.js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "the V8 project authors and Daishi Kato",
   "contributors": [
-     "Etienne Rossignon"
+    "Etienne Rossignon"
   ],
-  "dependencies": {
-  },
+  "dependencies": {},
   "repository": {
     "type": "git",
     "url": "https://github.com/dai-shi/benchmark-octane.git"
@@ -18,6 +17,6 @@
     "v8"
   ],
   "bin": {
-     "benchmark-octane": "./bin/benchmark-octane"
+    "benchmark-octane": "./bin/benchmark-octane"
   }
 }
